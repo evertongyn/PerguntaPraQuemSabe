@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_calculadora_juros"
+    tools:context=".CalculadoraJurosActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/capital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/capital"
+        android:inputType="numberDecimal"
+        android:maxLines="1"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/montante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/montante"
+        android:inputType="numberDecimal"
+        android:maxLines="1"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/quantidade_parcelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/quantidade_parcelas"
+        android:inputType="number"
+        android:maxLines="1"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/juros_informado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/juros_informado"
+        android:inputType="numberDecimal"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/botao_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calcular"
+        />
+
+    <TextView
+        android:id="@+id/campo_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+</LinearLayout>

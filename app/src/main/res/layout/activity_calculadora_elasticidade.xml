@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_calculadora_elasticidade"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.alura.perguntapraquemsabe.CalculadoraElasticidadeActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/preco_mes_anterior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Preço do mês anterior"
+        android:inputType="numberDecimal"
+        android:maxLines="1"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/preco_mes_atual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Preço do mês atual"
+        android:inputType="numberDecimal"
+        android:maxLines="1"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/quantidade_vendas_anterior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantidade de vendas do mês anterior"
+        android:inputType="number"
+        android:maxLines="1"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/quantidade_vendas_atual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantidade de vendas do mês atual"
+        android:inputType="number"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/botao_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calcular"
+        />
+
+    <TextView
+        android:id="@+id/elasticidade_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+</LinearLayout>
